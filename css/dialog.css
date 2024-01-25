@@ -1,6 +1,6 @@
 dialog {
     width: 330px;
-    height: 360px;
+    height: 290px;
     padding: 2.5rem 1.5rem;
     border: none;
     border-radius: 1rem;
@@ -16,7 +16,7 @@ dialog > form {
     margin: 0 1rem;
 }
 
-dialog > form > div:nth-child(-n+3) {
+dialog > form > div:nth-child(-n+2) {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
@@ -31,7 +31,7 @@ dialog label {
 dialog input[type="text"], 
 dialog input[type="number"] {
     outline: none;
-    height: 1.5rem;
+    height: 1.9rem;
     border: 1px solid rgba(214, 194, 167, 0.397);
     border-radius: .5rem;
     padding-left: .5rem;
