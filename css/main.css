@@ -2,10 +2,15 @@
 
 * {
     font-family: "Catamaran", sans-serif;
+    font-weight: 300;
 }
 
 body {
     background-color: rgb(255, 249, 241);
+
+    display: grid;
+    grid-template-rows: 1fr 2fr .5fr;
+    height: 100dvh;
 }
 
 header {
@@ -14,39 +19,69 @@ header {
     align-items: flex-start;
 
     margin: 2rem 0 3rem 4rem;
+
+    max-height: min-content;
 }
 
 h1 {
-    margin: 0 2rem 0 0;
+    margin: 0;
     font-size: 6rem;
-    align-self: flex-start;
 }
 
 button {
     border: none;
     padding: .7rem 1rem;
     border-radius: .5rem;
-    font-weight: bold;
-    background-color: rgb(255, 185, 100);
+
+    font-weight: 400;
+    background-color: rgb(255, 200, 132);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(255, 170, 66);
+    background-color: rgb(255, 190, 110);
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 20px 0;
+    font-size: 1.4em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Book Cards */
 #library-container {
-    width: 70%;
+    width: max(70%);
+    height: fit-content;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     gap: 2rem;
 }
 
 #library-container > div {
+    text-align: center;
+    max-height: fit-content;
+
     display: flex;
+    flex-direction: column;
 
     padding: 1.5rem;
     border-radius: 1rem;
@@ -55,7 +90,21 @@ button:hover {
     background-color: white;
 }
 
-#library-container > div > div:first-child {
-    margin-right: 2rem;
-    font-weight: bold;
+#library-container > div > div:first-of-type {
+    font-size: 1.5rem;
+}
+
+#library-container > div > button:first-of-type {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
 }
