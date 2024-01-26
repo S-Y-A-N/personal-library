@@ -6,10 +6,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/site.webmanifest">
     <script src="js/library.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dialog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Library ⋆｡°✩</title>
 </head>
 <body>
@@ -29,12 +31,12 @@
         <form method="dialog">
             <div>
                 <label for="title">Title</label>
-                <input type="text" id="title">
+                <input type="text" id="title" required>
             </div>
 
             <div>
                 <label for="author">Author</label>
-                <input type="text" id="author">
+                <input type="text" id="author" required>
             </div>
             <div>
                 <label for="read">Have you finished the book?</label>
@@ -43,5 +45,9 @@
             <button id="submit" type="submit">Add Book</button>
         </form>
     </dialog>
+
+    <footer>
+        <p><a href="https://github.com/S-Y-A-N" target="_blank"><i class="fa fa-github"></i> S-Y-A-N</a> | <a href="https://github.com/S-Y-A-N/calculator" target="_blank">Source Code</a></p>
+    </footer>
 </body>
 </html>
