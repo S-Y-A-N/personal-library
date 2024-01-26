@@ -2,7 +2,7 @@
 
 A simple, personal library to keep track of the books you've read or are yet to read!
 
-Done for [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator).
+Done for [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-library).
 
 ## Live Preview
 
