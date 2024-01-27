@@ -11,6 +11,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 2fr .5fr;
     height: 100dvh;
+    margin: 0;
 }
 
 header {
