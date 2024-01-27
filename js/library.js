@@ -73,8 +73,8 @@ function displayBook(book) {
 
 // Pre-defined books
 
-const book1 = new Book('Akatsuki no Yona', 'Mizuho Kusanagi', false)
-const book2 = new Book('Naruto: Shippuden', 'Masashi Kishimoto', true)
+const book1 = new Book('Akatsuki no Yona', 'Kusanagi Mizuho', false)
+const book2 = new Book('Naruto: Shippuden', 'Kishimoto Masashi', true)
 const book3 = new Book('Yagate Kimi ni Naru', 'Nakatani Nio', true)
 myLibrary.push(book1, book2, book3)
 myLibrary.forEach(book => displayBook(book))
